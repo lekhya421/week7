@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Registration Successful</title>
-    </head>
-    <body>
-        <p>Name : {{ name }}</p>
-        <p>Email : {{ email }}</p>
-        <p>Year : {{ year }}</p>
-        <h3>Registration Details Updated</h3>
-    </body>
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <form action="/register" method="post">
+
+        <label>Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label>Student ID:</label>
+        <input type="text" name="student_id" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Year:</label>
+        <input type="text" name="year" required><br><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+</body>
 </html>
