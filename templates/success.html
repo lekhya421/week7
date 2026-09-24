@@ -1,24 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Register</title>
+    <title>Registration Successful</title>
 </head>
 <body>
-    <form action="/register" method="post">
-        <label for="name">Student Name:</label>
-        <input type="text" name="name" required><br><br>
+    <h2>Registration Successful!</h2>
 
-        <label for="student_id">Student ID:</label>
-        <input type="text" name="student_id" required><br><br>
+    <p>Name: {{ name }}</p>
+    <p>Student ID: {{ student_id }}</p>
+    <p>Email: {{ email }}</p>
+    <p>Year: {{ year }}</p>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" required><br><br>
-
-        <label for="year">Year:</label>
-        <input type="text" name="year" required><br><br>
-
-        
-        <input type="submit" value="Register">
-        
+    <h3>Registration Details Updated</h3>
 </body>
 </html>
